@@ -1,12 +1,9 @@
 package lab1;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
-public class UniqueStringFinder implements Consumer<String>{
+public class UniqueStringFinder implements Consumer<String> {
     @Override
     public void accept(String[] strings) {
         int max = 0;

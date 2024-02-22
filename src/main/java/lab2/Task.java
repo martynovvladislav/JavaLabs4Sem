@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Task {
-    public static List<Human> humanList = new ArrayList<>(List.of(
+    private static List<Human> humanList = new ArrayList<>(List.of(
             new Human(33,
                     "Alexey",
                     "Alexeev",
@@ -54,7 +54,8 @@ public class Task {
     public static void main(String[] args) {
         System.out.println("Сортировка по сумме веса и возраста:");
         humanList.stream()
-                .sorted(Comparator.comparing(human -> human.weight() + human.age()))
+                .sorted(Comparator.comparing(human -> human.weight()
+                        + human.age()))
                 .toList()
                 .forEach(System.out::println);
         System.out.println("\nФильтрация по весу кратно 5:");
