@@ -71,8 +71,8 @@ public class Task {
         System.out.println("\nКонкатенация имен через пробел:");
         System.out.println(
                 humanList.stream()
-                .map(Human::firstName)
-                .collect(Collectors.joining(" "))
+                        .map(Human::firstName)
+                        .collect(Collectors.joining(" "))
         );
     }
 }

@@ -8,4 +8,5 @@ public record Human(
         String lastName,
         LocalDate birthDate,
         int weight
-) {}
+) {
+}
